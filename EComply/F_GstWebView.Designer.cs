@@ -1,14 +1,14 @@
 ﻿namespace EComply
 {
-    partial class Form1
+    partial class F_GstWebView
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,19 +23,22 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             pnlMain = new Panel();
             pnlContent = new Panel();
+            GstWebView = new Microsoft.Web.WebView2.WinForms.WebView2();
             pnlRight = new Panel();
             pnlLeft = new Panel();
             pnlBottom = new Panel();
             pnlTop = new Panel();
             label1 = new Label();
             pnlMain.SuspendLayout();
+            pnlContent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)GstWebView).BeginInit();
             pnlTop.SuspendLayout();
             SuspendLayout();
             // 
@@ -50,15 +53,28 @@
             pnlMain.Location = new Point(0, 0);
             pnlMain.Name = "pnlMain";
             pnlMain.Size = new Size(800, 450);
-            pnlMain.TabIndex = 0;
+            pnlMain.TabIndex = 1;
             // 
             // pnlContent
             // 
+            pnlContent.Controls.Add(GstWebView);
             pnlContent.Dock = DockStyle.Fill;
             pnlContent.Location = new Point(34, 33);
             pnlContent.Name = "pnlContent";
             pnlContent.Size = new Size(734, 384);
             pnlContent.TabIndex = 4;
+            // 
+            // GstWebView
+            // 
+            GstWebView.AllowExternalDrop = true;
+            GstWebView.CreationProperties = null;
+            GstWebView.DefaultBackgroundColor = Color.White;
+            GstWebView.Dock = DockStyle.Fill;
+            GstWebView.Location = new Point(0, 0);
+            GstWebView.Name = "GstWebView";
+            GstWebView.Size = new Size(734, 384);
+            GstWebView.TabIndex = 0;
+            GstWebView.ZoomFactor = 1D;
             // 
             // pnlRight
             // 
@@ -67,6 +83,7 @@
             pnlRight.Name = "pnlRight";
             pnlRight.Size = new Size(32, 384);
             pnlRight.TabIndex = 3;
+            pnlRight.Visible = false;
             // 
             // pnlLeft
             // 
@@ -75,6 +92,7 @@
             pnlLeft.Name = "pnlLeft";
             pnlLeft.Size = new Size(34, 384);
             pnlLeft.TabIndex = 2;
+            pnlLeft.Visible = false;
             // 
             // pnlBottom
             // 
@@ -92,6 +110,7 @@
             pnlTop.Name = "pnlTop";
             pnlTop.Size = new Size(800, 33);
             pnlTop.TabIndex = 0;
+            pnlTop.Visible = false;
             // 
             // label1
             // 
@@ -104,16 +123,18 @@
             label1.Text = "label1";
             label1.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // Form1
+            // F_GstWebView
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
             ClientSize = new Size(800, 450);
             Controls.Add(pnlMain);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "F_GstWebView";
+            Text = "F_GstWebView";
+            FormClosed += F_GstWebView_FormClosed;
             pnlMain.ResumeLayout(false);
+            pnlContent.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)GstWebView).EndInit();
             pnlTop.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -121,11 +142,12 @@
         #endregion
 
         private Panel pnlMain;
+        private Panel pnlContent;
+        private Microsoft.Web.WebView2.WinForms.WebView2 GstWebView;
+        private Panel pnlRight;
         private Panel pnlLeft;
         private Panel pnlBottom;
         private Panel pnlTop;
-        private Panel pnlContent;
-        private Panel pnlRight;
         private Label label1;
     }
 }

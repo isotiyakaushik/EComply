@@ -1,10 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Kaushik Use\\EComply\\",
+  "WorkspaceRootPath": "E:\\Kaushik Use\\Git Project\\EComply\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8713644D-0AB3-47E5-8DFE-57E58992E59A}|EComply\\EComply.csproj|e:\\kaushik use\\ecomply\\ecomply\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8713644D-0AB3-47E5-8DFE-57E58992E59A}|EComply\\EComply.csproj|solutionrelative:ecomply\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8713644D-0AB3-47E5-8DFE-57E58992E59A}|EComply\\EComply.csproj|E:\\Kaushik Use\\Git Project\\EComply\\ecomply\\f_addcompny.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8713644D-0AB3-47E5-8DFE-57E58992E59A}|EComply\\EComply.csproj|solutionrelative:ecomply\\f_addcompny.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8713644D-0AB3-47E5-8DFE-57E58992E59A}|EComply\\EComply.csproj|e:\\kaushik use\\git project\\ecomply\\ecomply\\common\\managemasterdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8713644D-0AB3-47E5-8DFE-57E58992E59A}|EComply\\EComply.csproj|solutionrelative:ecomply\\common\\managemasterdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8713644D-0AB3-47E5-8DFE-57E58992E59A}|EComply\\EComply.csproj|e:\\kaushik use\\git project\\ecomply\\ecomply\\f_addcompny.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8713644D-0AB3-47E5-8DFE-57E58992E59A}|EComply\\EComply.csproj|solutionrelative:ecomply\\f_addcompny.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DDFBA5C-FD3E-41CB-882E-173DEB24C7E4}|DBDapper\\DBDapper.csproj|e:\\kaushik use\\git project\\ecomply\\dbdapper\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DDFBA5C-FD3E-41CB-882E-173DEB24C7E4}|DBDapper\\DBDapper.csproj|solutionrelative:dbdapper\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8713644D-0AB3-47E5-8DFE-57E58992E59A}|EComply\\EComply.csproj|e:\\kaushik use\\git project\\ecomply\\ecomply\\mdiparent1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8713644D-0AB3-47E5-8DFE-57E58992E59A}|EComply\\EComply.csproj|solutionrelative:ecomply\\mdiparent1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8713644D-0AB3-47E5-8DFE-57E58992E59A}|EComply\\EComply.csproj|E:\\Kaushik Use\\Git Project\\EComply\\ecomply\\mdiparent1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8713644D-0AB3-47E5-8DFE-57E58992E59A}|EComply\\EComply.csproj|solutionrelative:ecomply\\mdiparent1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,14 +50,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "E:\\Kaushik Use\\EComply\\EComply\\Form1.cs",
-              "RelativeDocumentMoniker": "EComply\\Form1.cs",
-              "ToolTip": "E:\\Kaushik Use\\EComply\\EComply\\Form1.cs [Design]",
-              "RelativeToolTip": "EComply\\Form1.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "F_AddCompny.cs",
+              "DocumentMoniker": "E:\\Kaushik Use\\Git Project\\EComply\\EComply\\F_AddCompny.cs",
+              "RelativeDocumentMoniker": "EComply\\F_AddCompny.cs",
+              "ToolTip": "E:\\Kaushik Use\\Git Project\\EComply\\EComply\\F_AddCompny.cs",
+              "RelativeToolTip": "EComply\\F_AddCompny.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAHkAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-25T08:40:05.374Z",
+              "WhenOpened": "2026-08-26T11:28:21.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "F_AddCompny.cs [Design]",
+              "DocumentMoniker": "E:\\Kaushik Use\\Git Project\\EComply\\EComply\\F_AddCompny.cs",
+              "RelativeDocumentMoniker": "EComply\\F_AddCompny.cs",
+              "ToolTip": "E:\\Kaushik Use\\Git Project\\EComply\\EComply\\F_AddCompny.cs [Design]",
+              "RelativeToolTip": "EComply\\F_AddCompny.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T11:10:05.613Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ManageMasterDB.cs",
+              "DocumentMoniker": "E:\\Kaushik Use\\Git Project\\EComply\\EComply\\Common\\ManageMasterDB.cs",
+              "RelativeDocumentMoniker": "EComply\\Common\\ManageMasterDB.cs",
+              "ToolTip": "E:\\Kaushik Use\\Git Project\\EComply\\EComply\\Common\\ManageMasterDB.cs",
+              "RelativeToolTip": "EComply\\Common\\ManageMasterDB.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-27T12:47:39.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "E:\\Kaushik Use\\Git Project\\EComply\\DBDapper\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "DBDapper\\GenericRepository.cs",
+              "ToolTip": "E:\\Kaushik Use\\Git Project\\EComply\\DBDapper\\GenericRepository.cs",
+              "RelativeToolTip": "DBDapper\\GenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwCUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-27T11:53:58.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MDIParent1.cs",
+              "DocumentMoniker": "E:\\Kaushik Use\\Git Project\\EComply\\EComply\\MDIParent1.cs",
+              "RelativeDocumentMoniker": "EComply\\MDIParent1.cs",
+              "ToolTip": "E:\\Kaushik Use\\Git Project\\EComply\\EComply\\MDIParent1.cs",
+              "RelativeToolTip": "EComply\\MDIParent1.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAowCcAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T08:52:09.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MDIParent1.cs [Design]",
+              "DocumentMoniker": "E:\\Kaushik Use\\Git Project\\EComply\\EComply\\MDIParent1.cs",
+              "RelativeDocumentMoniker": "EComply\\MDIParent1.cs",
+              "ToolTip": "E:\\Kaushik Use\\Git Project\\EComply\\EComply\\MDIParent1.cs [Design]",
+              "RelativeToolTip": "EComply\\MDIParent1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T08:49:54.227Z",
               "EditorCaption": " [Design]"
             }
           ]
