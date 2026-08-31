@@ -11,7 +11,7 @@
     <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.2" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="10.0.11" />
     <PackageReference Include="MySqlConnector" Version="2.6.2" />
-    <PackageReference Include="Oracle.ManagedDataAccess" Version="23.26.300" />
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="23.26.300" />
     <PackageReference Include="SQLitePCLRaw.bundle_e_sqlcipher" Version="2.1.11" />
   </ItemGroup>
 

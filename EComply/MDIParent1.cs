@@ -47,8 +47,8 @@ namespace EComply
         {
             try
             {
-                OpenNewChildForm(new F_AddCompny("Add"));
-                //OpenNewChildForm(new F_AddCompny("Edit", "24AAACG7984Q1ZU"));
+                //OpenNewChildForm(new F_AddCompny("Add"));
+                OpenNewChildForm(new F_AddCompny("Edit", "24AAACG7984Q1ZU"));
             }
             catch (Exception ex)
             {

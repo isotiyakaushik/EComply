@@ -21,5 +21,13 @@ namespace Models
             public string? e_user_name { get; set; }
             public string? e_password { get; set; }
         }
+        public class CompanyDBMaster
+        {
+            public int Id { get; set; }
+            public string gstin { get; set; } = "";
+            public string db_type { get; set; } = "";
+            public string db_connection_string { get; set; } = "";
+        }
+
     }
 }

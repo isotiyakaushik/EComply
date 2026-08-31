@@ -39,13 +39,15 @@
             panel4 = new Panel();
             panel3 = new Panel();
             panel2 = new Panel();
-            textBox1 = new TextBox();
-            label13 = new Label();
+            btnCheckDbConnection = new Button();
+            btnBrowse = new Button();
+            txtDbConnection = new TextBox();
+            lblDatabaseLable = new Label();
             panel12 = new Panel();
-            radioButton4 = new RadioButton();
-            radioButton3 = new RadioButton();
-            radioButton2 = new RadioButton();
-            radioButton1 = new RadioButton();
+            rbMySql = new RadioButton();
+            rbSqlServer = new RadioButton();
+            rbOracle = new RadioButton();
+            rbSystemDefault = new RadioButton();
             label12 = new Label();
             panel11 = new Panel();
             label11 = new Label();
@@ -81,12 +83,14 @@
             pnlBottom = new Panel();
             pnlTop = new Panel();
             lblFormTitel = new Label();
+            btnClose = new Button();
             pnlMain.SuspendLayout();
             pnlContent.SuspendLayout();
             panel2.SuspendLayout();
             panel12.SuspendLayout();
             panel11.SuspendLayout();
             panel1.SuspendLayout();
+            pnlBottom.SuspendLayout();
             pnlTop.SuspendLayout();
             SuspendLayout();
             // 
@@ -100,7 +104,7 @@
             pnlMain.Dock = DockStyle.Fill;
             pnlMain.Location = new Point(0, 0);
             pnlMain.Name = "pnlMain";
-            pnlMain.Size = new Size(860, 452);
+            pnlMain.Size = new Size(860, 659);
             pnlMain.TabIndex = 1;
             // 
             // pnlContent
@@ -120,7 +124,7 @@
             pnlContent.Dock = DockStyle.Fill;
             pnlContent.Location = new Point(10, 33);
             pnlContent.Name = "pnlContent";
-            pnlContent.Size = new Size(840, 386);
+            pnlContent.Size = new Size(840, 593);
             pnlContent.TabIndex = 4;
             // 
             // panel10
@@ -198,8 +202,10 @@
             // panel2
             // 
             panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(textBox1);
-            panel2.Controls.Add(label13);
+            panel2.Controls.Add(btnCheckDbConnection);
+            panel2.Controls.Add(btnBrowse);
+            panel2.Controls.Add(txtDbConnection);
+            panel2.Controls.Add(lblDatabaseLable);
             panel2.Controls.Add(panel12);
             panel2.Controls.Add(label12);
             panel2.Controls.Add(panel11);
@@ -209,86 +215,110 @@
             panel2.Size = new Size(821, 203);
             panel2.TabIndex = 1;
             // 
-            // textBox1
+            // btnCheckDbConnection
             // 
-            textBox1.Location = new Point(172, 89);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(622, 23);
-            textBox1.TabIndex = 20;
+            btnCheckDbConnection.Location = new Point(172, 118);
+            btnCheckDbConnection.Name = "btnCheckDbConnection";
+            btnCheckDbConnection.Size = new Size(168, 23);
+            btnCheckDbConnection.TabIndex = 22;
+            btnCheckDbConnection.Text = "Check Database Connection";
+            btnCheckDbConnection.UseVisualStyleBackColor = true;
+            btnCheckDbConnection.Click += btnCheckDbConnection_Click;
             // 
-            // label13
+            // btnBrowse
             // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 10F);
-            label13.Location = new Point(11, 91);
-            label13.Name = "label13";
-            label13.Size = new Size(82, 19);
-            label13.TabIndex = 17;
-            label13.Text = "Connection:";
+            btnBrowse.Location = new Point(681, 89);
+            btnBrowse.Name = "btnBrowse";
+            btnBrowse.Size = new Size(113, 23);
+            btnBrowse.TabIndex = 21;
+            btnBrowse.Text = "Browse...";
+            btnBrowse.UseVisualStyleBackColor = true;
+            btnBrowse.Click += btnBrowse_Click;
+            // 
+            // txtDbConnection
+            // 
+            txtDbConnection.Location = new Point(172, 89);
+            txtDbConnection.Name = "txtDbConnection";
+            txtDbConnection.Size = new Size(503, 23);
+            txtDbConnection.TabIndex = 20;
+            // 
+            // lblDatabaseLable
+            // 
+            lblDatabaseLable.AutoSize = true;
+            lblDatabaseLable.Font = new Font("Segoe UI", 10F);
+            lblDatabaseLable.Location = new Point(11, 91);
+            lblDatabaseLable.Name = "lblDatabaseLable";
+            lblDatabaseLable.Size = new Size(82, 19);
+            lblDatabaseLable.TabIndex = 17;
+            lblDatabaseLable.Text = "Connection:";
             // 
             // panel12
             // 
-            panel12.Controls.Add(radioButton4);
-            panel12.Controls.Add(radioButton3);
-            panel12.Controls.Add(radioButton2);
-            panel12.Controls.Add(radioButton1);
+            panel12.Controls.Add(rbMySql);
+            panel12.Controls.Add(rbSqlServer);
+            panel12.Controls.Add(rbOracle);
+            panel12.Controls.Add(rbSystemDefault);
             panel12.Location = new Point(172, 57);
             panel12.Name = "panel12";
             panel12.Size = new Size(383, 23);
             panel12.TabIndex = 16;
             // 
-            // radioButton4
+            // rbMySql
             // 
-            radioButton4.AutoSize = true;
-            radioButton4.Dock = DockStyle.Left;
-            radioButton4.Location = new Point(284, 0);
-            radioButton4.Name = "radioButton4";
-            radioButton4.Padding = new Padding(5, 0, 10, 0);
-            radioButton4.Size = new Size(76, 23);
-            radioButton4.TabIndex = 3;
-            radioButton4.TabStop = true;
-            radioButton4.Text = "My Sql";
-            radioButton4.UseVisualStyleBackColor = true;
+            rbMySql.AutoSize = true;
+            rbMySql.Dock = DockStyle.Left;
+            rbMySql.Location = new Point(284, 0);
+            rbMySql.Name = "rbMySql";
+            rbMySql.Padding = new Padding(5, 0, 10, 0);
+            rbMySql.Size = new Size(76, 23);
+            rbMySql.TabIndex = 3;
+            rbMySql.TabStop = true;
+            rbMySql.Text = "My Sql";
+            rbMySql.UseVisualStyleBackColor = true;
+            rbMySql.CheckedChanged += rbMySql_CheckedChanged;
             // 
-            // radioButton3
+            // rbSqlServer
             // 
-            radioButton3.AutoSize = true;
-            radioButton3.Dock = DockStyle.Left;
-            radioButton3.Location = new Point(193, 0);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Padding = new Padding(5, 0, 10, 0);
-            radioButton3.Size = new Size(91, 23);
-            radioButton3.TabIndex = 2;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "Sql Server";
-            radioButton3.UseVisualStyleBackColor = true;
+            rbSqlServer.AutoSize = true;
+            rbSqlServer.Dock = DockStyle.Left;
+            rbSqlServer.Location = new Point(193, 0);
+            rbSqlServer.Name = "rbSqlServer";
+            rbSqlServer.Padding = new Padding(5, 0, 10, 0);
+            rbSqlServer.Size = new Size(91, 23);
+            rbSqlServer.TabIndex = 2;
+            rbSqlServer.TabStop = true;
+            rbSqlServer.Text = "Sql Server";
+            rbSqlServer.UseVisualStyleBackColor = true;
+            rbSqlServer.CheckedChanged += rbSqlServer_CheckedChanged;
             // 
-            // radioButton2
+            // rbOracle
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Dock = DockStyle.Left;
-            radioButton2.Location = new Point(119, 0);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Padding = new Padding(5, 0, 10, 0);
-            radioButton2.Size = new Size(74, 23);
-            radioButton2.TabIndex = 1;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Oracle";
-            radioButton2.UseVisualStyleBackColor = true;
+            rbOracle.AutoSize = true;
+            rbOracle.Dock = DockStyle.Left;
+            rbOracle.Location = new Point(119, 0);
+            rbOracle.Name = "rbOracle";
+            rbOracle.Padding = new Padding(5, 0, 10, 0);
+            rbOracle.Size = new Size(74, 23);
+            rbOracle.TabIndex = 1;
+            rbOracle.TabStop = true;
+            rbOracle.Text = "Oracle";
+            rbOracle.UseVisualStyleBackColor = true;
+            rbOracle.CheckedChanged += rbOracle_CheckedChanged;
             // 
-            // radioButton1
+            // rbSystemDefault
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Checked = true;
-            radioButton1.Dock = DockStyle.Left;
-            radioButton1.Location = new Point(0, 0);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Padding = new Padding(5, 0, 10, 0);
-            radioButton1.Size = new Size(119, 23);
-            radioButton1.TabIndex = 0;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "System Default";
-            radioButton1.UseVisualStyleBackColor = true;
+            rbSystemDefault.AutoSize = true;
+            rbSystemDefault.Checked = true;
+            rbSystemDefault.Dock = DockStyle.Left;
+            rbSystemDefault.Location = new Point(0, 0);
+            rbSystemDefault.Name = "rbSystemDefault";
+            rbSystemDefault.Padding = new Padding(5, 0, 10, 0);
+            rbSystemDefault.Size = new Size(119, 23);
+            rbSystemDefault.TabIndex = 0;
+            rbSystemDefault.TabStop = true;
+            rbSystemDefault.Text = "System Default";
+            rbSystemDefault.UseVisualStyleBackColor = true;
+            rbSystemDefault.CheckedChanged += rbSystemDefault_CheckedChanged;
             // 
             // label12
             // 
@@ -324,7 +354,6 @@
             // panel1
             // 
             panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(btnSaveChanges);
             panel1.Controls.Add(cbIShowPassword);
             panel1.Controls.Add(cbGstShowPassword);
             panel1.Controls.Add(btnGstImport);
@@ -358,9 +387,10 @@
             // 
             // btnSaveChanges
             // 
-            btnSaveChanges.Location = new Point(338, 300);
+            btnSaveChanges.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnSaveChanges.Location = new Point(632, 4);
             btnSaveChanges.Name = "btnSaveChanges";
-            btnSaveChanges.Size = new Size(143, 24);
+            btnSaveChanges.Size = new Size(95, 24);
             btnSaveChanges.TabIndex = 25;
             btnSaveChanges.Text = "Save Changes";
             btnSaveChanges.UseVisualStyleBackColor = true;
@@ -598,7 +628,7 @@
             pnlRight.Dock = DockStyle.Right;
             pnlRight.Location = new Point(850, 33);
             pnlRight.Name = "pnlRight";
-            pnlRight.Size = new Size(10, 386);
+            pnlRight.Size = new Size(10, 593);
             pnlRight.TabIndex = 3;
             pnlRight.Visible = false;
             // 
@@ -607,15 +637,17 @@
             pnlLeft.Dock = DockStyle.Left;
             pnlLeft.Location = new Point(0, 33);
             pnlLeft.Name = "pnlLeft";
-            pnlLeft.Size = new Size(10, 386);
+            pnlLeft.Size = new Size(10, 593);
             pnlLeft.TabIndex = 2;
             pnlLeft.Visible = false;
             // 
             // pnlBottom
             // 
             pnlBottom.BorderStyle = BorderStyle.FixedSingle;
+            pnlBottom.Controls.Add(btnClose);
+            pnlBottom.Controls.Add(btnSaveChanges);
             pnlBottom.Dock = DockStyle.Bottom;
-            pnlBottom.Location = new Point(0, 419);
+            pnlBottom.Location = new Point(0, 626);
             pnlBottom.Name = "pnlBottom";
             pnlBottom.Size = new Size(860, 33);
             pnlBottom.TabIndex = 1;
@@ -641,12 +673,23 @@
             lblFormTitel.Text = "label1";
             lblFormTitel.TextAlign = ContentAlignment.MiddleLeft;
             // 
+            // btnClose
+            // 
+            btnClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnClose.Location = new Point(733, 3);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(95, 24);
+            btnClose.TabIndex = 26;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
+            // 
             // F_AddCompny
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(860, 452);
+            ClientSize = new Size(860, 659);
             Controls.Add(pnlMain);
             Name = "F_AddCompny";
             Text = "Add Compny";
@@ -659,6 +702,7 @@
             panel11.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            pnlBottom.ResumeLayout(false);
             pnlTop.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -712,11 +756,14 @@
         private Button btnSaveChanges;
         private Label label12;
         private Panel panel12;
-        private RadioButton radioButton4;
-        private RadioButton radioButton3;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
-        private TextBox textBox1;
-        private Label label13;
+        private RadioButton rbMySql;
+        private RadioButton rbSqlServer;
+        private RadioButton rbOracle;
+        private RadioButton rbSystemDefault;
+        private TextBox txtDbConnection;
+        private Label lblDatabaseLable;
+        private Button btnBrowse;
+        private Button btnCheckDbConnection;
+        private Button btnClose;
     }
 }

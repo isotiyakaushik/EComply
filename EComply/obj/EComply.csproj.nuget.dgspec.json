@@ -67,7 +67,7 @@
               "target": "Package",
               "version": "[2.6.2, )"
             },
-            "Oracle.ManagedDataAccess": {
+            "Oracle.ManagedDataAccess.Core": {
               "target": "Package",
               "version": "[23.26.300, )"
             },
@@ -157,6 +157,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.4, )"
+            },
+            "System.IO.FileSystem.AccessControl": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
